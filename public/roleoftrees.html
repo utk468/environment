@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Role of Trees in the Environment</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+            top: 0;
+        }
+
+        header h1 {
+            font-family: 'Lucida Sans', sans-serif;
+            color: whitesmoke;
+            font-size: 1.8rem;
+        }
+
+        nav {
+            margin-right: 60px;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            font-family: 'Lucida Sans', sans-serif;
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #ff9800;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background-image: url("\\roleoftrees_images\\pine-trees.jpg");
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: #ffffff;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #ffffff;
+            margin: 10px 0;
+        }
+
+        .container {
+            background-color: #000000;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-between;
+            padding: 2rem;
+        }
+
+        .left-section,
+        .right-section {
+            color: #ffffff;
+            margin-top: 80px;
+            flex: 1;
+            max-width: 50%;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .left-section img,
+        .right-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #importance p,
+        #threats p,
+        #actions p {
+            font-family: 'Lucida Sans', sans-serif;
+            font-size: 25px;
+            color: whitesmoke;
+        }
+
+        button {
+            background-color: #ff9800;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #ffffff;
+            color: #121212;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 2rem;
+            background-color: #000000;
+        }
+
+        .card {
+            margin-top: 120px;
+            background-color: #000000;
+            width: 300px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card h2 {
+            margin: 20px 0;
+            color: #ffffff;
+        }
+
+        footer {
+            background-color: black;
+            padding: 150px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .footer-left h2 {
+            color: whitesmoke;
+            font-size: 1.7rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-left p {
+            color: whitesmoke;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .footer-right {
+            display: flex;
+            gap: 40px;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-section h3 {
+            font-size: 1.7rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .footer-section a {
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 8px;
+            opacity: 0.8;
+        }
+
+        .footer-section a:hover {
+            opacity: 1;
+        }
+
+        
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .container {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .left-section,
+            .right-section {
+                max-width: 100%;
+            }
+
+            .card-container {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            header {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+
+            nav {
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>The Role of Trees</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="#importance">Importance</a>
+            <a href="#threats">Threats</a>
+            <a href="#actions">Actions</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Preserving Earth's Green Cover</h2>
+            <p>Explore the critical role trees play in sustaining life on Earth.</p>
+        </section>
+
+        <section id="importance" class="container">
+            <div class="left-section">
+                <img src="\roleoftrees_images\meta_LPCO2.jpg" alt="Importance of Trees">
+            </div>
+            <div class="right-section">
+                <h1>Why Are Trees Important?</h1>
+                <p>Trees also play a crucial role in preventing soil erosion, reducing the risk of floods, and regulating the Earth's temperature by acting as natural carbon sinks. They provide habitats for countless species, supporting ecosystems and fostering biodiversity. Furthermore, trees contribute to human well-being by offering shade, enhancing air quality, and creating serene green spaces that promote mental health. Their presence in urban areas reduces the urban heat island effect and improves the overall quality of life. Protecting and planting trees is vital for combating climate change and ensuring a sustainable future for the planet.</p>
+                <button>Learn More</button>
+            </div>
+        </section>
+
+        <section id="threats" class="container">
+            <div class="left-section">
+                <h1>Threats to Forests</h1>
+                <p>These factors contribute to the loss of vital ecosystems, reduced biodiversity, and disruption of natural processes such as carbon sequestration and water cycle regulation. Deforestation, often driven by agriculture, logging, and infrastructure development, leads to habitat destruction and accelerates soil erosion. Urbanization replaces green spaces with concrete, diminishing the capacity of the environment to absorb pollutants and moderate temperatures. Climate change exacerbates forest degradation through extreme weather events, prolonged droughts, and shifts in species distributions, making forests more vulnerable to pests and diseases.</p>
+                <button>Read About Threats</button>
+            </div>
+            <div class="right-section">
+                <img src="\roleoftrees_images\deforestation.jpg" alt="Threats to Forests">
+            </div>
+        </section>
+
+        <section id="actions" class="container">
+            <div class="left-section">
+                <img src="/roleoftrees_images/afforestation.jpg" alt="Actions for Conservation">
+            </div>
+            <div class="right-section">
+                <h1>How Can We Help?</h1>
+                <p>Promoting afforestation, reducing deforestation, and supporting sustainable practices are crucial to conserving forests and ensuring the balance of ecosystems. These efforts help restore degraded lands, enhance biodiversity, and mitigate the effects of climate change by increasing carbon storage. Encouraging the use of renewable resources, adopting eco-friendly technologies, and enforcing strict regulations on illegal logging can further aid in forest conservation. Community-driven initiatives, education, and global cooperation are essential to creating a sustainable future where forests thrive and continue to provide their invaluable benefits to the planet and its inhabitants.</p>
+                <button>Learn More</button>
+            </div>
+        </section>
+
+        <section class="card-container">
+            <div class="card">
+                <img src="\roleoftrees_images\planttrees.jpeg" alt="Plant Trees" style="border: 1px solid rgb(238, 172, 85); height: 200px; width: 300px;" >
+                <h2>Plant More Trees</h2>
+                <button>Explore More</button>
+            </div>
+            <div class="card">
+                <img src="\roleoftrees_images\RM_waste_reduction.jpg" alt="Eco-Friendly Living" style="border: 1px solid rgb(238, 172, 85); height: 200px; width: 300px;">
+                <h2>Adopt Eco-Friendly Practices</h2>
+                <button>Learn More</button>
+            </div>
+            <div class="card">
+                <img src="\roleoftrees_images\saveforest.jpeg" alt="Protect Forests" style="border: 1px solid rgb(238, 172, 85); height: 200px; width: 300px;">
+                <h2>Protect Natural Forests</h2>
+                <button>Get Tips</button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-left">
+                <h2>Green Planet</h2>
+                <p>Join us in protecting our planet's green cover for future generations.</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-section">
+                    <h3>Learn More</h3>
+                    <a href="#">About Trees</a>
+                    <a href="#">Our Projects</a>
+                    <a href="#">Sustainability Tips</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Get Involved</h3>
+                    <a href="#">Volunteer</a>
+                    <a href="#">Donate</a>
+                    <a href="#">Spread the Word</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

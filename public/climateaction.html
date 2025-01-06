@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Action</title>
+    <style>
+        /* General Styles */
+ body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #020a1a;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            font-weight: 300;
+        }
+
+
+        /* Content Section */
+        .container {
+            width: 90%;
+            max-width: 1300px;
+            margin: 2rem auto;
+        }
+
+        .content-box {
+            margin-top: 5rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5rem;
+            margin-bottom: 3rem;
+        }
+
+        .box {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .box img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .box img:hover {
+            transform: scale(1.05);
+        }
+
+        .box h2 {
+            margin: 0 0 1rem;
+            font-size: 1.5rem;
+            color: #f7a120;
+        }
+
+        .box p {
+            font-size: 1rem;
+            color: #000000;
+        }
+
+        /* Call to Action */
+        .cta {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .cta a {
+            background-color: #FFB700;
+            color: #333;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #EAA500;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000000;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 1rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .content-box {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content-box {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Climate Action</h1>
+        <p>Steps to minimize your carbon footprint and contribute to environmental well-being</p>
+    </header>
+
+    <div class="container">
+        <div class="content-box">
+            <div class="box">
+                <img src="\climate_images\reducingcarbonfootprint.jpg" alt="Reducing Carbon Footprint">
+                <h2>Reduce Carbon Footprint</h2>
+                <p>Reduce energy consumption, opt for sustainable transportation, and shift towards low-carbon alternatives to minimize your carbon emissions.</p>
+            </div>
+            <div class="box">
+                <img src="\climate_images\plant_trees.jpeg" alt="Planting Trees">
+                <h2>Plant Trees</h2>
+                <p>Planting trees helps absorb CO2 from the atmosphere, providing vital support in combating climate change and preserving biodiversity.</p>
+            </div>
+            <div class="box">
+                <img src="\climate_images\electricvehical.webp" alt="Electric Vehicles">
+                <h2>Switch to Electric Vehicles</h2>
+                <p>Electric vehicles produce fewer emissions compared to traditional cars. Transitioning to EVs will significantly help in reducing air pollution.</p>
+            </div>
+            <div class="box">
+                <img src="\climate_images\greenenergy.jpg" alt="Green Energy">
+                <h2>Adopt Green Energy</h2>
+                <p>Switching to green energy sources like wind and solar helps reduce reliance on fossil fuels and lowers overall environmental impact.</p>
+            </div>
+            <div class="box">
+                <img src="\climate_images\Sustainable_Agriculture.webp" alt="Sustainable Farming">
+                <h2>Support Sustainable Farming</h2>
+                <p>Choose organic and locally grown produce to reduce the carbon footprint associated with food production and transportation.</p>
+            </div>
+            <div class="box">
+                <img src="\climate_images\waterconservation.jpeg" alt="Water Conservation">
+                <h2>Conserve Water</h2>
+                <p>Conserving water reduces the energy used in its treatment and transportation, and ensures that we preserve this vital resource.</p>
+            </div>
+
+            <div class="box">
+                <img src="\climate_images\reduceplastic.jpg" alt="Reduce Plastic Use">
+                <h2>Reduce Plastic Waste</h2>
+                <p>Limit the use of single-use plastics by opting for reusable bags, bottles, and containers to reduce waste and environmental harm.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <a href="#action">Join the Climate Action Movement</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Climate Action | Every Step Counts Towards a Sustainable Future</p>
+    </footer>
+
+</body>
+
+</html>

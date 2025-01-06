@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UV Index Tracker</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #121212;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+            top: 0;
+        }
+
+        header h1 {
+            font-family: 'Lucida Sans', sans-serif;
+            color: rgb(0, 0, 0);
+            font-size: 1.8rem;
+        }
+
+        nav {
+            margin-right: 60px;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            font-family: 'Lucida Sans', sans-serif;
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #ff9800;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 70vh;
+            background: url('uvimg.jpg') no-repeat center center/cover;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .hero button {
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: orange;
+        }
+
+        /* Data Section */
+        .data-section {
+            padding: 50px;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+
+        .data-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .data-container h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        #uv-index-data {
+            font-size: 1.2rem;
+            color: #000000;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>UV Index Tracker</h1>
+        <nav>
+            <a href="\">Home</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Monitor UV Index</h2>
+            <p>Stay safe from harmful sunlight with real-time UV index updates.</p>
+            <button onclick="getUVIndex()">Check UV Index</button>
+        </section>
+    
+        <section class="data-section">
+            <div class="data-container">
+                <h3>Current UV Index</h3>
+                <div id="uv-index-data">
+                    <p>Enter your city name to see the UV index data.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>© 2024 UV Index Tracker. All rights reserved.</p>
+    </footer>
+    <script src="uvindex.js"></script>
+</body>
+
+</html>

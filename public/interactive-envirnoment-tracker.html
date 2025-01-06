@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environment Monitoring Hub</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+    
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+            top: 0;
+        }
+    
+        header h1 {
+            font-family: 'Lucida Sans', sans-serif;
+            color: rgb(0, 0, 0);
+            font-size: 1.8rem;
+        }
+    
+        nav {
+            margin-right: 60px;
+            display: flex;
+            gap: 20px;
+        }
+    
+        nav a {
+            font-family: 'Lucida Sans', sans-serif;
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    
+        nav a:hover {
+            color: #ff9800;
+        }
+    
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            background-image: url("\\interactive-envirnoment_images\\pixel0.jpg");
+         background-size: cover;
+            background-position: center;
+            color: #000000;
+            text-align: center;
+            padding: 20px;
+        }
+    
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+    
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+    
+        .hero button {
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+    
+        .hero button:hover {
+            background-color: #ffffff;
+            color: #333;
+            border: 1px solid #ffb703;
+        }
+    
+        .tracker-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 4rem;
+            padding: 40px 20px;
+            background-color:rgb(0, 0, 0);
+        }
+    
+        .tracker-card {
+            margin-top: 80px;
+            margin-bottom: 80px;
+            background-color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            padding: 50px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+    
+        .tracker-card img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+    
+        
+    
+        .tracker-card p {
+            font-size: 1rem;
+            margin: 10px 0;
+            color: #000000;
+        }
+    
+        .tracker-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+        }
+    
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+    
+            header nav {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+    
+            .hero h2 {
+                font-size: 2rem;
+            }
+    
+            .hero p {
+                font-size: 1rem;
+            }
+    
+            .tracker-card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    
+        a {
+            font-size: 1.3rem;
+            color: #000000;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <h1>Environment Trackers<h1>
+        <nav>
+            <a href="\">Home</a>
+            <a href="#air-quality">Air Quality</a>
+            <a href="#uvindex">UV Index</a>
+            <a href="#deforestation">Deforestation</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Monitor. Act. Preserve.</h2>
+        <p>Your guide to understanding and improving our planet's health through key environmental insights.</p>
+        <button>Get Started</button>
+    </section>
+
+    <section class="tracker-section" id="air-quality">
+        <div class="tracker-card">
+            <img src="\interactive-envirnoment_images\airqualityicon.jpeg" alt="Air Quality Icon">
+            <h3><a href="airquality.html">Air Quality</a></h3>
+            <p>Analyze air quality data in your area and take actions to reduce pollution effectively.</p>
+        </div>
+        <div class="tracker-card" id="uvindex">
+            <img src="\interactive-envirnoment_images\uvindex.jpeg" alt="uv Levels Icon">
+            <h3><a href="uvindex.html">UV Index</a></h3>
+            <p>UV index is displayed along with a risk category based on the index value (Low, Moderate, High, Very High, or Extreme).
+            </p>
+        </div>
+        <div class="tracker-card" id="deforestation">
+            <img src="\interactive-envirnoment_images\treeicon.jpg" alt="Deforestation Icon">
+            <h3><a href="forestcover.html">Forest Cover</a></h3>
+            <p>Keep a check on deforestation rates and support global reforestation programs.</p>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>© 2024 Environment Monitoring Hub. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
