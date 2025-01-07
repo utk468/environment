@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Living</title>
+    <style>
+    
+             
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8f5; 
+    line-height: 1.6;
+    color: #333; 
+}
+
+
+header {
+    background-color: #2d6a4f;
+    color: #ffffff; 
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    color: #95d5b2; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    font-weight: 300;
+}
+
+
+.hero {
+    background: url('nature-bg.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+    background-color: #52b788;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #40916c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 3rem auto;
+}
+
+.content-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.box img:hover {
+    transform: scale(1.05);
+}
+
+.box h2 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    color: #2d6a4f;
+}
+
+.box p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+.cta {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.cta a {
+    background-color: #ffb700;
+    color: #333;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta a:hover {
+    background-color: #eaa500;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+footer {
+    background-color: #081c15;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+@media (max-width: 1024px) {
+    .content-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .content-box {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sustainable Living</h1>
+        <p>Inspiring Change for a Greener Future</p>
+    </header>
+
+ 
+
+    <div class="container">
+        <div class="content-box">
+            <div class="box" id="reduce-waste">
+                <img src="\sustainable_images\reducewaste.webp" alt="Recycling bins" style=" height: 250px; width: 250px;">
+                <h2>Reduce Waste</h2>
+                <p>Adopt habits like reusing items, reducing single-use plastics, and donating unused items to lower waste generation. Every small step can lead to significant changes in reducing landfill impact.</p>
+            </div>
+            <div class="box" id="recycle">
+                <img src="\sustainable_images\recycle.jpg" alt="Recycling process" style=" height: 250px; width: 250px;">
+                <h2>Recycle Effectively</h2>
+                <p>Learn the correct way to separate materials, identify recyclable items, and understand your local recycling guidelines. Proper recycling can save energy, reduce pollution, and conserve resources.</p>
+            </div>
+            <div class="box" id="ewaste">
+                <img src="\sustainable_images\ewaste.webp" alt="E-waste" style=" height: 250px; width: 250px;">
+                <h2>Manage E-Waste</h2>
+                <p>Dispose of electronic waste responsibly by recycling gadgets, batteries, and devices at certified facilities. This prevents harmful chemicals from polluting our environment.</p>
+            </div>
+            <div class="box" id="renewable-energy">
+                <img src="\sustainable_images\renewable.jpg" alt="Solar panels" style=" height: 250px; width: 250px;">
+                <h2>Switch to Renewable Energy</h2>
+                <p>Install solar panels or opt for green energy programs. Using renewable energy reduces dependency on fossil fuels and minimizes your carbon footprint.</p>
+            </div>
+            <div class="box">
+                <img src="\sustainable_images\energy.jpg" alt="Energy-efficient appliances" style=" height: 250px; width: 250px;">
+                <h2>Energy-Efficient Appliances</h2>
+                <p>Upgrade to energy-efficient appliances and LED lighting. These devices consume less electricity, helping you save money and protect the environment.</p>
+            </div>
+            <div class="box">
+                <img src="\sustainable_images\waterresourceicon.avif" alt="Water conservation" style=" height: 250px; width: 250px;">
+                <h2>Conserve Water</h2>
+                <p>Fix leaks, install low-flow faucets, and collect rainwater for gardening. Water conservation ensures the availability of this vital resource for future generations.</p>
+            </div>
+            <div class="box">
+                <img src="\sustainable_images\organic.jpg" alt="Organic farming" style=" height: 250px; width: 250px;">
+                <h2>Support Local & Organic</h2>
+                <p>Buy locally grown, organic produce to reduce the environmental impact of food transportation and pesticide use.</p>
+            </div>
+        </div>
+
+        <div class="cta">
+            <a href="#community">Get Involved in Community Action</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sustainable Living | Join the Movement for a Greener Planet</p>
+    </footer>
+
+</body>
+
+</html>
