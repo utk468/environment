@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environment Monitoring Hub</title>
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', sans-serif;
+    background-color: #000000;
+    color: #333;
+    overflow-x: hidden; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    transition: background-color 0.3s ease;
+}
+
+
+header h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav {
+    margin-right: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #e29e1e; 
+    transform: scale(1.1);
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("\\images\\snow-trees.jpg"); /* Nature Image */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    background-attachment: fixed;
+    animation: parallax 10s infinite alternate;
+}
+
+@keyframes parallax {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 2rem;
+    margin: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.hero button {
+    background-color: #2e7d32; 
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.hero button:hover {
+    background-color: #ffffff;
+    color: #2e7d32;
+    border: 2px solid #2e7d32;
+}
+
+
+.tracker-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    padding: 60px 20px;
+    background-color: #000000; 
+    color: white;
+}
+
+.tracker-card {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tracker-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.tracker-card p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.tracker-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+    background-color: #000000; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #00796b; 
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+
+a {
+    font-size: 1.2rem;
+    color: #004d40; 
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .tracker-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+
+.hero {
+    animation: parallax 20s infinite linear;
+}
+
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <h1><h1>
+        <nav>
+            <a href="\index2.html">Home</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2></h2>
+        <p>Focusing on these features, you can offer practical, actionable advice that empowers users to make a meaningful environmental impact in their daily lives.</p>
+    </section>
+
+   
+        
+    <section class="tracker-section">
+        <div class="tracker-card">
+            <img src="\praticalguidance_images\recyclingicon.jpg" alt="Recycling Icon" style=" height: 200px; width: 200px;">
+            <h3><a href="recycling.html">Recycling & Waste</a></h3>
+            <p>Learn effective ways to manage waste and recycle materials to reduce landfill impact.</p>
+        </div>
+        <div class="tracker-card">
+            <img src="\praticalguidance_images\SUSTAINABILITYicon.jpg" alt="Sustainable Icon" style=" height: 200px; width: 200px;">
+            <h3><a href="sustainable.html">Sustainable Living</a></h3>
+            <p>Discover practices for energy savings and eco-friendly daily habits to protect our planet.</p>
+        </div>
+        <div class="tracker-card">
+            <img src="\praticalguidance_images\climateicon.jpg" alt="Climate Action Icon" style=" height: 200px; width: 200px;">
+            <h3><a href="climateaction.html">Climate Action</a></h3>
+            <p>Steps to minimize your carbon footprint and contribute to environmental well-being.</p>
+        </div>
+        <div class="tracker-card">
+            <img src="\praticalguidance_images\wildlifeicon.jpg" alt="Wildlife Icon" style=" height: 200px; width: 200px;">
+            <h3><a href="wildlife.html">Wildlife Preservation</a></h3>
+            <p>Contribute to preserving biodiversity and protecting endangered species.</p>
+        </div>
+        <div class="tracker-card">
+            <img src="\praticalguidance_images\urbangarden.jpg" alt="Gardening Icon" style=" height: 200px; width: 200px;">
+            <h3><a href="gardening.html">Urban Gardening</a></h3>
+            <p>Start your own garden to grow food and improve your local environment.</p>
+        </div>
+        <div class="tracker-card">
+            <img src="\praticalguidance_images\renewableenergy.jpg" alt="Renewable Icon" style=" height: 200px; width: 200px;">
+            <h3><a href="renewable.html">Renewable Energy</a></h3>
+            <p>Learn about solar, wind, and other renewable energy options for your home.</p>
+        </div>
+        <div class="tracker-card">
+            <img src="\praticalguidance_images\environmentaleducation.png" alt="Education Icon" style=" height: 200px; width: 200px;">
+            <h3><a href="education.html">Environmental Education</a></h3>
+            <p>Access resources to learn and teach about environmental issues and solutions.</p>
+        </div>
+        <div class="tracker-card">
+            <img src="\praticalguidance_images\comunityactionicon.jpg" alt="Community Icon" style=" height: 200px; width: 200px;">
+            <h3><a href="community.html">Community Action</a></h3>
+            <p>Join community clean-ups and environmental awareness campaigns.</p>
+        </div>
+        <div class="tracker-card">
+            <img src="\praticalguidance_images\waterconservation.jpeg" alt="Water Conservation Icon" style=" height: 200px; width: 200px;">
+            <h3><a href="water.html">Water Conservation</a></h3>
+            <p>Simple methods to conserve water in daily activities and manage resources.</p>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>© 2024 Environment Monitoring Hub. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
